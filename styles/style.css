@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: Miama;
+    src: url("../font/Miama.ttf");
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg-dark {
+    background-color: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+/* TODO: shared Style */
+#second-color {
+    background-color: rgb(230, 83, 60);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.w-100 {
+    max-width: 100%;
+}
+
+input,
+select {
+    width: 100%;
+}
+
+.primary_button {
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    text-wrap: nowrap;
+    padding: 15px 30px;
+}
+
+.secondary_button {
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 42px;
+    border: none;
+    text-wrap: nowrap;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+/* TODO Shared style END */
+
+nav.container {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title h3 {
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.nav-btn-container {
+    max-width: 480px;
+}
+
+.nav-btn-container {
+    border: 1px solid gray;
+    border-radius: 50px;
+    align-items: center;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background: black;
+    max-width: 92px;
+    height: 38px;
+    border: none;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.nav-hamburger-menu {
+    display: none;
+}
+
+
+/* TODO: Banner Section Style Start */
+
+#banner {
+    margin-top: 30px;
+    background: radial-gradient(#2f2d2d, #000000, black);
+}
+
+.banner_buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.banner-left {
+    margin-top: 10px;
+    max-width: 65%;
+}
+
+.banner-right {
+    position: relative;
+    margin-right: 70px;
+}
+
+.banner-left h2 {
+    font-size: 4.875rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.miama-font {
+    font-family: Miama;
+    font-weight: 400;
+    font-size: 10rem;
+}
+
+.banner-left p {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 24px;
+    padding-right: 100px;
+}
+
+.banner-btn-container {
+    display: flex;
+}
+
+.banner-btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-btn-container button {
+    margin-top: 28px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    max-width: 200px;
+    height: 50px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+}
+
+.banner-btn-container .banner-btn-two button {
+    background-color: black;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+
+
+.banner-right .transparent-one {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    bottom: 80px;
+    left: -20px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 10px;
+}
+
+
+.banner-right .transparent-two {
+    position: absolute;
+    padding: 7px 12px;
+    text-wrap: nowrap;
+    left: 190px;
+    bottom: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    text-align: center;
+}
+
+.banner-right .transparent-one .orange-circle {
+    margin-top: 13px;
+    margin-left: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+}
+
+.transparent-one {
+    display: flex;
+}
+
+.transparent-one .num350 {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.transparent-one .text {
+    display: inline-block;
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.transparent-two .num500 {
+    display: inline-block;
+    font-size: 2.125rem;
+    font-weight: 900;
+}
+
+.transparent-two .text {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* TODO Banner Section END */
+
+
+/* TODO: Habit Section Start */
+#habit-main-container {
+    margin-top: 100px;
+}
+
+.habit-change {
+    text-align: center;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.habit-change h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.habit-change p {
+    margin-top: 14px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Cards section*/
+.habit-card-container {
+    margin-top: 58px;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.card img {
+    margin-top: 10px;
+    max-width: 180px;
+    height: 180px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.card h5 {
+    margin-top: 15px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 6px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+}
+
+/* TODO Habbit Section END */
+
+
+/* TODO: Run section Start */
+.run-container {
+    margin-top: 100px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    justify-content: space-around;
+}
+
+.run-left .run-left-content {
+    max-width: 443px;
+}
+
+.run-left-content h2 {
+    margin-top: 40px;
+    font-size: 3rem;
+}
+
+.run-left p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.run-left button {
+    margin-top: 28px;
+    padding: 15px 60px;
+}
+.unique {
+    margin-top: 28px;
+    padding: 15px 60px;
+}
+
+
+.run-right .run-img {
+    max-width: 466px;
+    height: 312px;
+    overflow: hidden;
+    margin-top: 27px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+/* TODO Run section End */
+
+
+/* TODO: Before BMI sectin start */
+
+.before-bmi h2 {
+    margin-top: 66px;
+    padding-left: 150px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.before-bmi p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 150px;
+    max-width: 800px;
+}
+
+/* Before BMI section end */
+
+
+
+/* TODO: BMI Section Start */
+
+
+.bmi-main-container {
+    margin-top: 66px;
+    background: rgb(34, 34, 34);
+    margin-bottom: 70px;
+}
+
+.bmi {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.bmi-left h3 {
+    margin-top: 52px;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.bmi-right {
+    padding-left: 70px;
+}
+
+table {
+    margin-top: 52px;
+    border-collapse: collapse;
+    border: 2px solid rgb(54, 54, 54);
+}
+
+th,
+td {
+    border: 2px solid rgb(54, 54, 54);
+    padding: 10px 40px;
+    height: 30px;
+    text-align: left;
+    padding-left: 15px;
+    color: rgb(114, 114, 114);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+th {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-right h3 {
+    margin-top: 52px;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.bmi-right p {
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.form {
+    margin-top: 32px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.activity {
+    grid-column: span 2;
+}
+
+
+.form input,
+.form select {
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(54, 54, 54) !important;
+}
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-right form button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 10px 40px;
+    height: 50px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin-bottom: 50px;
+}
+
+/* BMI Section Style END */
+
+/* TODO: Team section Start */
+.team-container {
+    margin-top: 100px;
+}
+
+.team-header {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.team-header h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.team-header p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 24px;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.team-cards {
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+}
+
+.card-img {
+    border-radius: 18px;
+    height: 300px;
+}
+
+.team-container .team-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 22px;
+    border-radius: 18px;
+}
+
+.team-cards>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.card-text h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+/* Team section End */
+
+
+/* TODO: Footer Section Start */
+
+footer {
+    margin-top: 88px;
+    background: rgb(34, 34, 34);
+}
+
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.footer-left h2 {
+    padding-top: 66px;
+    color: rgb(230, 83, 60);
+    font-size: 3.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.footer-left p {
+    margin-top: 20px;
+    max-width: 450px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    line-height: 24px;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    margin-top: 66px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.150rem;
+}
+
+hr {
+    margin-top: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .coppy {
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 1.25rem;
+}
+
+
+
+/* TODO: Equipment section */
+.equipment-section{
+    justify-content: space-between;
+    padding: 198px 20px 20px;
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+    margin-bottom: 88px;
+  }
+  .epq-sec-left{
+    position: relative;
+  }
+  .eqp-img-1{
+    filter: grayscale(60%);
+  }
+  .eqp-img-2{
+    position: absolute;
+    bottom: 180px;
+    left: 160px;
+  }
+  .eqp-img{
+    width: 300px;
+    height: 370px;
+    border-radius: 18px;
+  }
+  .epq-sec-right{
+    max-width:450px;
+  }
+  
+  .epq-sec-right .primary-btn{
+    width: 224px;
+    margin-top: 22px;
+  }
+  .section-title-box {
+    max-width: 671px;
+    margin: 0 auto;
+  }
+
+  .primary-info {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    word-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 7px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+  }
+
+/* TODO: Mobile Responsive */
+
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 960px;
+        /* max-width: 1140px; */
+    }
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .nav-btn-container {
+        display: none;
+    }
+
+
+    .nav-hamburger-menu {
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    .container {
+        padding: 0px 30px;
+
+    }
+
+    .primary_button {
+        font-size: .9rem;
+    }
+
+    .secondary_button {
+        font-size: .9rem;
+    }
+
+    .banner-left,
+    .banner-right {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    th,
+    td {
+        padding: 10px 10px;
+    }
+
+
+    /*TODO Banner section style */
+    #banner {
+        flex-direction: column;
+    }
+
+
+    .banner-left h2 {
+        font-size: 2.5rem;
+    }
+
+    .miama-font {
+
+        font-size: 5rem;
+    }
+
+    .banner-left p {
+
+        padding-right: 10px;
+    }
+
+
+    .banner-btn-container button {
+        max-width: 185px;
+    }
+
+    .banner_buttons button {
+        font-size: .9rem;
+    }
+
+
+    .banner-right img {
+        margin-left: 20px;
+    }
+
+
+    .banner-right .transparent-two {
+        left: 190px;
+        bottom: 330px;
+    }
+
+
+    .transparent-two .num500 {
+        font-size: 1.5rem;
+    }
+
+
+    /* TODO Habit Section */
+
+    #habit-main-container {
+        margin-top: 0px;
+    }
+
+    .habit-change h3 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .habit-card-container {
+        flex-direction: column;
+    }
+
+    /* TODO: Run container */
+    .run-container {
+        flex-direction: column;
+        margin: 0 30px;
+        margin-top: 66px;
+        padding-left: 20px;
+    }
+
+
+    .run-left-content h2 {
+        margin-top: 40px;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+
+    .run-right .run-img {
+        height: 312px;
+        margin-bottom: 27px;
+    }
+
+    .run-img img {
+        width: 100%;
+    }
+
+    .run-left .run-left-content button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 28px;
+        max-width: 324px;
+    }
+
+
+    /* TODO Shedule Extra section */
+    #shedule {
+        margin-top: 66px;
+        flex-direction: column;
+    }
+
+    #shedule .left {
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    #shedule .left h2 {
+        font-size: 1.5rem;
+    }
+
+    .run-left button {
+        font-size: 1rem;
+    }
+
+    /* TODO Before BMI section */
+    .before-bmi h2 {
+        padding-left: 4px;
+    }
+
+    .before-bmi p {
+        max-width: 320px;
+        padding-left: 4px;
+    }
+
+
+    /* TODO BMI Section */
+
+    .bmi {
+        grid-template-columns: 1fr;
+    }
+
+    .bmi-right {
+        padding: 0;
+    }
+
+    /* TODO Team section */
+
+    .team-header p {
+        max-width: 320px;
+    }
+
+    .team-container .team-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* TODO Footer section */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* TODO Unique Section */
+.equipment-section{
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 30px;
+  }
+
+.mq{
+    margin-bottom: 50px;
+}
+
+.epq-sec-left .hide{
+    display: none;
+}
+.epq-sec-left img{
+    height: 80%;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+}
+
+
+
+
+/* TODO END of mobile responsive */
